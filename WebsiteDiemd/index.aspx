@@ -63,7 +63,7 @@
                     <li><a href="index.aspx#services">Services</a></li>
                     <li><a href="index.aspx#portfolio">Portfolio</a></li>
                     <li><a href="index.aspx#team">Team</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog.aspx">Blog</a></li>
                     <li class="dropdown has-dropdown">
                         <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
                         <ul class="dd-box-shadow">
