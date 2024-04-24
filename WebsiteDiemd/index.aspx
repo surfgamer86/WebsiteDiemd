@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Home - Append Bootstrap Template</title>
+    <title>DIEMD</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -34,7 +34,8 @@
 
     <!-- =======================================================
     * Template Name: Append
-    * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+    * Template URL: https://bootstrapmade.com/
+        -bootstrap-website-template/
     * Updated: Mar 17 2024 with Bootstrap v5.3.3
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
@@ -47,21 +48,21 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+            <a href="index.aspx" class="logo d-flex align-items-center me-auto me-xl-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1>Append</h1>
+                <h1>DIEMD</h1>
                 <span>.</span>
             </a>
 
             <!-- Nav Menu -->
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html#hero" class="active">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.aspx#hero" class="active">Home</a></li>
+                    <li><a href="index.aspx#about">About</a></li>
+                    <li><a href="index.aspx#services">Services</a></li>
+                    <li><a href="index.aspx#portfolio">Portfolio</a></li>
+                    <li><a href="index.aspx#team">Team</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li class="dropdown has-dropdown">
                         <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
@@ -82,13 +83,13 @@
                             <li><a href="#">Dropdown 4</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.aspx#contact">Contact</a></li>
                 </ul>
 
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav><!-- End Nav Menu -->
 
-            <a class="btn-getstarted" href="index.html#about">Get Started</a>
+            <a class="btn-getstarted" href="index.aspx#about">Get Started</a>
 
         </div>
     </header><!-- End Header -->
@@ -1116,8 +1117,8 @@
         <div class="container footer-top">
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-about">
-                    <a href="index.html" class="logo d-flex align-items-center">
-                        <span>Append</span>
+                    <a href="index.aspxl" class="logo d-flex align-items-center">
+                        <span>DIEMD</span>
                     </a>
                     <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
                     <div class="social-links d-flex mt-4">
@@ -1163,7 +1164,7 @@
         </div>
 
         <div class="container copyright text-center mt-4">
-            <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
+            <p>&copy; <span>Copyright</span> <strong class="px-1">DIEMD</strong> <span>All Rights Reserved</span></p>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you've purchased the pro version. -->
