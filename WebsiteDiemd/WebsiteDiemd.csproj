@@ -178,6 +178,8 @@
     <Content Include="forms\contact.php" />
     <Content Include="forms\Readme.txt" />
     <Content Include="index.html" />
+    <Content Include="main.aspx" />
+    <Content Include="masterpage.master" />
     <Content Include="portfolio-details.html" />
     <Content Include="Readme.txt" />
     <Content Include="services-details.html" />
@@ -191,6 +193,20 @@
     </Compile>
     <Compile Include="blog.aspx.designer.cs">
       <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterpage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>masterpage.master</DependentUpon>
+    </Compile>
+    <Compile Include="masterpage.master.designer.cs">
+      <DependentUpon>masterpage.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="index.aspx.cs">
