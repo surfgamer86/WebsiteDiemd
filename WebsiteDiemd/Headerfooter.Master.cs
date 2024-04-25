@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebsiteDiemd
 {
-    public partial class Main : System.Web.UI.Page
+    public partial class Headerfooter : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
