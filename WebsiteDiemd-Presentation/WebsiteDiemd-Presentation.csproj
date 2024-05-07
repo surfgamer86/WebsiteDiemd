@@ -60,6 +60,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebsiteDiemd-Library">
+      <HintPath>..\WebsiteDiemd-Library\bin\Debug\WebsiteDiemd-Library.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
