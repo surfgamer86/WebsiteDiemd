@@ -3856,8 +3856,9 @@ textarea.form-control-lg {
   overflow-y: auto;
 }
 
+
 @media (min-width: 576px) {
-  .navbar-expand-sm {
+    .navbar-expand-sm {
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
@@ -11583,17 +11584,19 @@ html {
   height: 75vw;
   width: 75vw;
   border-radius: 5vw;
-  margin-top: 5vw;
+  margin-top: 1vw;
   max-height: 40rem;
   max-width: 40rem;
 }
 .profile .profile-img {
   height: 80vw;
-  max-height: 45rem;
+  max-height: 22rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  margin-bottom: 1vw;
+
 }
 .profile .dots-1 {
   position: absolute;
