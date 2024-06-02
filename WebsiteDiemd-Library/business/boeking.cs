@@ -13,14 +13,24 @@ namespace WebsiteDiemd_Library.business
         int _dienstid;
         DateTime _tijd;
         string _probleem;
+         string _waar;
 
-        public boeking(int boekingid, int aanmeldingid, int dienstid, DateTime tijd, string probleem)
+        public boeking(int boekingid, int aanmeldingid, int dienstid, DateTime tijd, string probleem, string waar)
         {
             Boekingid = boekingid;
             Aanmeldingid = aanmeldingid;
             Dienstid = dienstid;
             Tijd = tijd;
             Probleem = probleem;
+            _waar = waar;
+        }
+        public boeking(int aanmeldingid, int dienstid, DateTime tijd, string probleem, string waar)
+        {
+            Aanmeldingid = aanmeldingid;
+            Dienstid = dienstid;
+            Tijd = tijd;
+            Probleem = probleem;
+            _waar = waar;
         }
 
         public int Boekingid { get => _boekingid; set => _boekingid = value; }
@@ -28,5 +38,6 @@ namespace WebsiteDiemd_Library.business
         public int Dienstid { get => _dienstid; set => _dienstid = value; }
         public DateTime Tijd { get => _tijd; set => _tijd = value; }
         public string Probleem { get => _probleem; set => _probleem = value; }
+        public string Waar { get => _waar; set => _waar = value; }
     }
 }

@@ -70,12 +70,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aanmelden.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="assets\favicon.ico" />
     <Content Include="assets\profile.png" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="contact.aspx" />
     <Content Include="contact.html" />
     <Content Include="css\styles.css" />
     <Content Include="DIEMD-Logo.png" />
@@ -92,19 +92,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aanmelden.aspx.cs">
+      <DependentUpon>aanmelden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aanmelden.aspx.designer.cs">
+      <DependentUpon>aanmelden.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="contact.aspx.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="contact.aspx.designer.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>

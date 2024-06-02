@@ -18,6 +18,15 @@ namespace WebsiteDiemd_Library.business
             Omschrijving = omschrijving;
             Prijs = prijs;
         }
+        public diensten(string omschrijving, double prijs)
+        {
+            Omschrijving = omschrijving;
+            Prijs = prijs;
+        }
+        public diensten(string omschrijving)
+        {
+            Omschrijving = omschrijving ;
+        }
 
         public int Id { get => _id; set => _id = value; }
         public string Omschrijving { get => _omschrijving; set => _omschrijving = value; }
