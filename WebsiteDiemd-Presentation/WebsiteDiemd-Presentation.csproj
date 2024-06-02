@@ -89,6 +89,7 @@
     <Content Include="services.aspx" />
     <Content Include="team.aspx" />
     <Content Include="tos.aspx" />
+    <Content Include="user.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="tos.aspx.designer.cs">
       <DependentUpon>tos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

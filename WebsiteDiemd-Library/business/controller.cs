@@ -7,7 +7,7 @@ using WebsiteDiemd_Library.persitence;
 
 namespace WebsiteDiemd_Library.business
 {
-    class controller
+    public class controller
     {
         private persist _persistCode = new persist();
 

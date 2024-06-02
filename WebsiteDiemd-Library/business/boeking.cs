@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebsiteDiemd_Library.business
 {
-    class boeking
+   public class boeking
     {
         int _boekingid;
         int _aanmeldingid;

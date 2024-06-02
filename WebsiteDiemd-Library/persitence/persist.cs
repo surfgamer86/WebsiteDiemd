@@ -8,13 +8,12 @@ using WebsiteDiemd_Library.business;
 using MySql.Data.MySqlClient;
 
 namespace WebsiteDiemd_Library.persitence
-{
-    class persist
+{ class persist
     {
         private string _connectionString;
         public persist()
         {
-            _connectionString = @"server=localhost;user id=root;database=diemdtechnologiesIlyaan;password=test123";
+            _connectionString = @"server=localhost;user id=root;database=diemdtechnologiesMilan;password=test123";
         }
 
         //Om gegevens op te vragen uit de tabel tblaanmelden

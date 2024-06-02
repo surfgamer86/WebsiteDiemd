@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebsiteDiemd_Library.business
 {
-    class voorbereiding
+   public class voorbereiding
     {
         int _opdrachtid;
         int _aanmeldenid;

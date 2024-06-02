@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebsiteDiemd_Library.business
 {
-    class aanmelden
+   public class aanmelden
     {
         int _id;
         string _naam;
@@ -163,6 +163,9 @@ namespace WebsiteDiemd_Library.business
                 Password = naam;
             }
         }
-
+        public override string ToString()
+        {
+            return _naam;
+        }
     }
 }
