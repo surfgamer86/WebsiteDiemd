@@ -151,7 +151,7 @@ namespace WebsiteDiemd_Library.persitence
 
             while (dataReader.Read())
             {
-                uitvoer = Convert.ToString(dataReader["rol"]);
+                uitvoer = (dataReader["rol"]).ToString();
             }
             return uitvoer;
         }

@@ -23,17 +23,17 @@ namespace WebsiteDiemd_Presentation
 
             string gebruikersnaamdb = _bc.GetGebr(gebruikersnaam);
             string wachtwoorddb = _bc.GetWacht(gebruikersnaam, wachtwoord);
-            string rol = _bc.GetRol(gebruikersnaam);
+            
 
             if (gebruikersnaam != gebruikersnaamdb || wachtwoord != wachtwoorddb)
             {
                 Response.Write("<script> alert('Gebruikersnaam of wachtwoord bestaat niet')</script>");
                 return; 
             }
-
+            
             Session["access"] = "true";
             Session["username"] = gebruikersnaam;
-
+            string rol = _bc.GetRol(gebruikersnaam);
             if (rol.Equals("Werknemer"))
             {
                 Session["rol"] = "werknemer";
@@ -43,7 +43,7 @@ namespace WebsiteDiemd_Presentation
 
             else
             {
-                Session["rol"] = "klant";
+                 Session["rol"] = "klant";
                 Response.Redirect("user.aspx");
                 
             }
