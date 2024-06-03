@@ -12,7 +12,7 @@
                 </p>
                 <div class="form-group">
                     <input id="usernameInput" type="text" placeholder="Username" runat="server"/><asp:RequiredFieldValidator ID="usernameValidator" runat="server" ErrorMessage="Geen Username ingevuld" ControlToValidate="usernameInput"></asp:RequiredFieldValidator>
-                </div>
+                    </div>
                 <div class="form-group">
                     <input id="passwordInput" type="password" placeholder="password"  runat="server"/><asp:RequiredFieldValidator ID="passwordValidator" runat="server" ErrorMessage="Geen wachtwoord ingevuld" ControlToValidate="passwordInput"></asp:RequiredFieldValidator>
                 </div>
