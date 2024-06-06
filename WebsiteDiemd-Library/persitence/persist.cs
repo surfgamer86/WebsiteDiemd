@@ -13,7 +13,7 @@ namespace WebsiteDiemd_Library.persitence
         private string _connectionString;
         public persist()
         {
-            _connectionString = @"server=localhost;user id=root;database=diemdtechnologiesMilan;password=test123";
+            _connectionString = @"server=localhost;user id=root;database=diemdtechnologiesilyaan;password=test123";
         }
 
         //Om gegevens op te vragen uit de tabel tblaanmelden

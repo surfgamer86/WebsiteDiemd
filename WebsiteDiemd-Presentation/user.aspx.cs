@@ -13,7 +13,7 @@ namespace WebsiteDiemd_Presentation
         {
             if ((Session["rol"].ToString() == "klant") || (Session["rol"].ToString() == "werknemer"))
             {
-                Response.Write("<script> alert('Welkom klant')</script>");
+                naamLabel.Text = Session["username"].ToString();
                 
             }
             else
