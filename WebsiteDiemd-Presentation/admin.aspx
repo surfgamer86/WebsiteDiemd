@@ -2,9 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:GridView ID="GridView1" runat="server"  ></asp:GridView>
     <asp:Button ID="toevoegenBtn" runat="server" Text="Toevoegen" OnClick="toevoegen" />
+    <p></p>
     <asp:Button ID="wijzigenBtn" runat="server" Text="Wijzigen" OnClick="wijzig" />
+    <p></p>
     <asp:Button ID="verwijderBtn" runat="server" Text="Verwijderen" OnClick="verwijderen" />
+    <p></p>
+    <asp:Button ID="afmelden" runat="server" Text="Afmelden" OnClick="afmelden_click" />
     
 </asp:Content>

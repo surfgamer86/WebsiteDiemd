@@ -3,4 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     Hallo <asp:Label ID="naamLabel" runat="server" Text="Label"></asp:Label>
+    <br />
+    <asp:Button ID="aantalBtn" runat="server" Text="Aantal Boekingen" OnClick="aantalBtn_OnClick" />
+    <p></p>
+    <asp:Button ID="" runat="server" Text="Toevoegen" OnClick="toevoegenBtn_OnClick" />
 </asp:Content>

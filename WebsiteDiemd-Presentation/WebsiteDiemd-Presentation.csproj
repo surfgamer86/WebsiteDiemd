@@ -71,7 +71,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aanmelden.aspx" />
+    <Content Include="aantalboeking.aspx" />
     <Content Include="admin.aspx" />
+    <Content Include="afmelding.aspx" />
     <Content Include="assets\favicon.ico" />
     <Content Include="assets\profile.png" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
@@ -88,9 +90,12 @@
     <Content Include="resume.html" />
     <Content Include="services.aspx" />
     <Content Include="team.aspx" />
+    <Content Include="Toevoegen.aspx" />
     <Content Include="tos.aspx" />
     <Content Include="user.aspx" />
+    <Content Include="Verwijderen.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Wijzigen.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="aanmelden.aspx.cs">
@@ -100,12 +105,26 @@
     <Compile Include="aanmelden.aspx.designer.cs">
       <DependentUpon>aanmelden.aspx</DependentUpon>
     </Compile>
+    <Compile Include="aantalboeking.aspx.cs">
+      <DependentUpon>aantalboeking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aantalboeking.aspx.designer.cs">
+      <DependentUpon>aantalboeking.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="afmelding.aspx.cs">
+      <DependentUpon>afmelding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="afmelding.aspx.designer.cs">
+      <DependentUpon>afmelding.aspx</DependentUpon>
     </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
@@ -144,6 +163,13 @@
     <Compile Include="team.aspx.designer.cs">
       <DependentUpon>team.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Toevoegen.aspx.cs">
+      <DependentUpon>Toevoegen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toevoegen.aspx.designer.cs">
+      <DependentUpon>Toevoegen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="tos.aspx.cs">
       <DependentUpon>tos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,6 +183,20 @@
     </Compile>
     <Compile Include="user.aspx.designer.cs">
       <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Verwijderen.aspx.cs">
+      <DependentUpon>Verwijderen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verwijderen.aspx.designer.cs">
+      <DependentUpon>Verwijderen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wijzigen.aspx.cs">
+      <DependentUpon>Wijzigen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wijzigen.aspx.designer.cs">
+      <DependentUpon>Wijzigen.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -23,5 +23,10 @@ namespace WebsiteDiemd_Presentation
 
 
         }
+
+        protected void aantalBtn_OnClick(object sender, EventArgs e)
+        {
+            Response.Redirect("aantalboeking.aspx");
+        }
     }
 }

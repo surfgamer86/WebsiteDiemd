@@ -8,10 +8,10 @@ using WebsiteDiemd_Library.business;
 
 namespace WebsiteDiemd_Presentation
 {
-    public partial class admin : System.Web.UI.Page
+    public partial class Verwijderen : System.Web.UI.Page
     {
-        controller _bc = new controller();
-
+        
+        private controller _bc = new controller();
         protected void Page_Load(object sender, EventArgs e)
         {
             if ((Session["rol"] == null))
@@ -27,28 +27,25 @@ namespace WebsiteDiemd_Presentation
             {
                 Response.Redirect("aanmelden.aspx");
             }
-
-           
+            GridView1.DataSource = _bc.GetBoekingen();
+            GridView1.DataBind();
+        }
+        protected void deleteButton_click(object sender, EventArgs e)
+        {
+            _bc.DelBoeking(Convert.ToInt16((Label1.Text)));
+            ResetForm();
         }
 
-        protected void wijzig(object sender, EventArgs e)
+        protected void GridView1_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            Response.Redirect("Wijzigen.aspx");
+             Label1.Text = GridView1.SelectedRow.Cells[1].Text;
+             ResetForm();
         }
 
-        protected void verwijderen(object sender, EventArgs e)
+        protected void ResetForm()
         {
-            Response.Redirect("Verwijderen.aspx");
-        }
-
-        protected void toevoegen(object sender, EventArgs e)
-        {
-            Response.Redirect("Toevoegen.aspx");
-        }
-
-        protected void afmelden_click(object sender, EventArgs e)
-        {
-            Response.Redirect("afmelding.aspx");
+            GridView1.DataSource = _bc.GetBoekingen();
+            GridView1.DataBind();
         }
     }
 }

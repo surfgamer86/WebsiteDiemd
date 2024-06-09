@@ -31,5 +31,9 @@ namespace WebsiteDiemd_Library.business
         public int Id { get => _id; set => _id = value; }
         public string Omschrijving { get => _omschrijving; set => _omschrijving = value; }
         public double Prijs { get => _prijs; set => _prijs = value; }
+        public override string ToString()
+        {
+            return _omschrijving;
+        }
     }
 }

@@ -11,25 +11,16 @@ namespace WebsiteDiemd_Presentation
 {
 
 
-    public partial class user
+    public partial class aantalboeking
     {
 
         /// <summary>
-        /// naamLabel control.
+        /// aantalLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label naamLabel;
-
-        /// <summary>
-        /// aantalBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aantalBtn;
+        protected global::System.Web.UI.WebControls.Label aantalLabel;
     }
 }
