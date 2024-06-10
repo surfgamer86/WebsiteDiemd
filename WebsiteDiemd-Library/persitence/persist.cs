@@ -72,8 +72,9 @@ namespace WebsiteDiemd_Library.persitence
         public void AddPersoon(aanmelden aanmelden)
         {
             MySqlConnection conn = new MySqlConnection(_connectionString);
-            MySqlCommand cmd = new MySqlCommand("insert into tblaanmelden(Naam, Geboortedatum, Geslacht, gebruikersnaam, Wachtwoord, Straat, Nummer, Postcode, Gemeente, Email, Telnr, rol) values(@Naam, @Geboortedatum, @Geslacht, @gebruikersnaam, @Wachtwoord, @Straat, @Nummer, @Postcode, @Gemeente, @Email, @Telnr, @rol)", conn);
+            MySqlCommand cmd = new MySqlCommand("insert into tblaanmelden(Naam,Voornaam, Geboortedatum, Geslacht, gebruikersnaam, Wachtwoord, Straat, Nummer, Postcode, Gemeente, Email, Telnr, rol) values(@Naam, @Voornaam, @Geboortedatum, @Geslacht, @gebruikersnaam, @Wachtwoord, @Straat, @Nummer, @Postcode, @Gemeente, @Email, @Telnr, @rol)", conn);
             cmd.Parameters.AddWithValue("Naam", aanmelden.Naam);
+            cmd.Parameters.AddWithValue("Voornaam", aanmelden.Voornaam);
             cmd.Parameters.AddWithValue("Geboortedatum", aanmelden.Gebdatum);
             cmd.Parameters.AddWithValue("Geslacht", aanmelden.Sex);
             cmd.Parameters.AddWithValue("gebruikersnaam", aanmelden.Username);
