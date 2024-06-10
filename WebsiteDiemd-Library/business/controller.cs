@@ -24,8 +24,29 @@ namespace WebsiteDiemd_Library.business
 
         public void AddBoeking(int AanmeldenID, int DienstID, DateTime Wanneer, string Waar, string probleem)
         {
-            boeking boeking = new boeking(DienstID, AanmeldenID, Wanneer,  probleem, Waar);
+            boeking boeking = new boeking(DienstID, AanmeldenID, Wanneer, probleem, Waar);
             _persistCode.AddBoeking(boeking);
+        }
+
+        public void AddPersoon(string naam, string voornaam, DateTime gebdatum, bool sex, string username, string wachtwoord, string straat, int nummer, int postcode, string gemeente, string email, int telnr, string rol)
+        {
+            aanmelden aanmelden = new aanmelden
+            (
+                 naam,
+                 voornaam,
+                gebdatum,
+                sex,
+                username,
+                wachtwoord,
+                    straat,
+                nummer,
+                postcode,
+                gemeente,
+                email,
+                telnr,
+                rol
+            );
+            _persistCode.AddPersoon(aanmelden);
         }
 
         public void DelBoeking(int id)

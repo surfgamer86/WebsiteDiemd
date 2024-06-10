@@ -11,43 +11,43 @@ namespace WebsiteDiemd_Presentation
 {
 
 
-    public partial class user
+    public partial class Usertoevoeg
     {
 
         /// <summary>
-        /// naamLabel control.
+        /// calender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label naamLabel;
+        protected global::System.Web.UI.WebControls.Calendar calender;
 
         /// <summary>
-        /// aantalBtn control.
+        /// waarText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aantalBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText waarText;
 
         /// <summary>
-        /// toevoegenBtn control.
+        /// probleemText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button toevoegenBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText probleemText;
 
         /// <summary>
-        /// afmelden control.
+        /// toevoegenButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button afmelden;
+        protected global::System.Web.UI.WebControls.Button toevoegenButton;
     }
 }

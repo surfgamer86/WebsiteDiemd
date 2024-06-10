@@ -33,5 +33,14 @@ namespace WebsiteDiemd_Presentation
         {
             Response.Redirect("aantalboeking.aspx");
         }
+
+        protected void toevoegenBtn_OnClick(object sender, EventArgs e)
+        {
+            Response.Redirect("Usertoevoeg.aspx");
+        }
+        protected void afmelden_click(object sender, EventArgs e)
+        {
+            Response.Redirect("afmelding.aspx");
+        }
     }
 }

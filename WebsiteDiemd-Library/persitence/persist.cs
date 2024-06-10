@@ -53,7 +53,7 @@ namespace WebsiteDiemd_Library.persitence
             return lijst;
         }
 
-        //om een persoon te kunnen toe te voegen
+        //om een boeking te kunnen toe te voegen
         public void AddBoeking(boeking boeking)
         {
             MySqlConnection conn = new MySqlConnection(_connectionString);
@@ -63,6 +63,28 @@ namespace WebsiteDiemd_Library.persitence
             cmd.Parameters.AddWithValue("Wanneer", boeking.Tijd);
             cmd.Parameters.AddWithValue("Waar", boeking.Waar);
             cmd.Parameters.AddWithValue("Probleem", boeking.Probleem);
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public void AddPersoon(aanmelden aanmelden)
+        {
+            MySqlConnection conn = new MySqlConnection(_connectionString);
+            MySqlCommand cmd = new MySqlCommand("insert into tblaanmelden(Naam, Geboortedatum, Geslacht, gebruikersnaam, Wachtwoord, Straat, Nummer, Postcode, Gemeente, Email, Telnr, rol) values(@Naam, @Geboortedatum, @Geslacht, @gebruikersnaam, @Wachtwoord, @Straat, @Nummer, @Postcode, @Gemeente, @Email, @Telnr, @rol)", conn);
+            cmd.Parameters.AddWithValue("Naam", aanmelden.Naam);
+            cmd.Parameters.AddWithValue("Geboortedatum", aanmelden.Gebdatum);
+            cmd.Parameters.AddWithValue("Geslacht", aanmelden.Sex);
+            cmd.Parameters.AddWithValue("gebruikersnaam", aanmelden.Username);
+            cmd.Parameters.AddWithValue("Wachtwoord", aanmelden.Password);
+            cmd.Parameters.AddWithValue("Straat", aanmelden.Straat);
+            cmd.Parameters.AddWithValue("Nummer", aanmelden.Nummer);
+            cmd.Parameters.AddWithValue("Postcode", aanmelden.Postcode);
+            cmd.Parameters.AddWithValue("Gemeente", aanmelden.Gemeente);
+            cmd.Parameters.AddWithValue("Email", aanmelden.Email);
+            cmd.Parameters.AddWithValue("Telnr", aanmelden.Telnr);
+            cmd.Parameters.AddWithValue("rol", aanmelden.Role);
 
             conn.Open();
             cmd.ExecuteNonQuery();

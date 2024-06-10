@@ -89,10 +89,12 @@
     <Content Include="projects.html" />
     <Content Include="resume.html" />
     <Content Include="services.aspx" />
+    <Content Include="SignUp.aspx" />
     <Content Include="team.aspx" />
     <Content Include="Toevoegen.aspx" />
     <Content Include="tos.aspx" />
     <Content Include="user.aspx" />
+    <Content Include="Usertoevoeg.aspx" />
     <Content Include="Verwijderen.aspx" />
     <Content Include="Web.config" />
     <Content Include="Wijzigen.aspx" />
@@ -149,6 +151,13 @@
     <Compile Include="services.aspx.designer.cs">
       <DependentUpon>services.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -183,6 +192,13 @@
     </Compile>
     <Compile Include="user.aspx.designer.cs">
       <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usertoevoeg.aspx.cs">
+      <DependentUpon>Usertoevoeg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usertoevoeg.aspx.designer.cs">
+      <DependentUpon>Usertoevoeg.aspx</DependentUpon>
     </Compile>
     <Compile Include="Verwijderen.aspx.cs">
       <DependentUpon>Verwijderen.aspx</DependentUpon>

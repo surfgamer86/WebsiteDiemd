@@ -19,8 +19,9 @@ namespace WebsiteDiemd_Presentation
             }
         if ((Session["rol"].ToString() == "klant") || (Session["rol"].ToString() == "werknemer"))
             {
-                naamLabel.Text = Session["username"].ToString();
-                aantalLabel.Text = _bc.GetAantalBoekingen();
+                
+                aantalLabel.Text = Convert.ToString(_bc.GetAantalBoekingen());
+                
                 
             }
             else
