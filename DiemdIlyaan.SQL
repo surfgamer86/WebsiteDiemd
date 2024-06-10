@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `diemdtechnologiesilyaan` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `diemdtechnologiesilyaan`;
--- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
 --
 -- Host: localhost    Database: diemdtechnologiesilyaan
 -- ------------------------------------------------------
--- Server version	8.0.21
+-- Server version	8.0.37
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -38,8 +38,9 @@ CREATE TABLE `tblaanmelden` (
   `Gemeente` tinytext NOT NULL,
   `Email` tinytext NOT NULL,
   `Telnr` int NOT NULL,
+  `rol` varchar(45) NOT NULL,
   PRIMARY KEY (`AanmeldenID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -48,7 +49,7 @@ CREATE TABLE `tblaanmelden` (
 
 LOCK TABLES `tblaanmelden` WRITE;
 /*!40000 ALTER TABLE `tblaanmelden` DISABLE KEYS */;
-INSERT INTO `tblaanmelden` VALUES (1,'Milan','Scharmin','2005-11-21 11:30:00',0,'Milqno','Melk','Oude Brugseweg',25,8460,'Westkerke','milan.scharmin@student.ppsjo.be',499500724),(2,'Ilyaan','Ali','2007-11-11 11:11:11',0,'Ali','Ali','Ali',11,1111,'Ali','Ali@gmail.com',1111111111),(3,'Dennis','Hu','2005-02-18 00:00:00',0,'Dennis','Hu','Hu',11,1111,'Hu','Hu@gmail.com',1111111111),(4,'Darius','achternaam','2005-11-11 11:11:11',0,'Darius','achternaam','achernaam',11,1111,'achternaam','achternaam@gmail.com',1111111111),(5,'Erjan','achter','2005-11-11 11:11:11',0,'Erjan','Erjan','Erjan',11,1111,'Erjan','erjan@gmail.com',1111111111);
+INSERT INTO `tblaanmelden` VALUES (1,'Milan','Scharmin','2005-11-21 11:30:00',0,'Milqno','Melk','Oude Brugseweg',25,8460,'Westkerke','milan.scharmin@student.ppsjo.be',499500724,'Werknemer'),(2,'Ilyaan','Ali','2007-11-11 11:11:11',0,'Ali','Ali','Ali',11,1111,'Ali','Ali@gmail.com',1111111111,'Klant'),(3,'Dennis','Hu','2005-02-18 00:00:00',0,'Dennis','Hu','Hu',11,1111,'Hu','Hu@gmail.com',1111111111,''),(4,'Darius','achternaam','2005-11-11 11:11:11',0,'Darius','achternaam','achernaam',11,1111,'achternaam','achternaam@gmail.com',1111111111,''),(5,'Erjan','achter','2005-11-11 11:11:11',0,'Erjan','Erjan','Erjan',11,1111,'Erjan','erjan@gmail.com',1111111111,''),(6,'test','test','2024-06-12 00:00:00',0,'test','test','test',12561,1651,'test','test',1645165,'Klant');
 /*!40000 ALTER TABLE `tblaanmelden` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -138,6 +139,10 @@ LOCK TABLES `tblvoorbereidingopdracht` WRITE;
 INSERT INTO `tblvoorbereidingopdracht` VALUES (1,1,2,NULL),(2,2,1,NULL),(3,3,3,NULL),(4,4,4,NULL),(5,5,5,NULL);
 /*!40000 ALTER TABLE `tblvoorbereidingopdracht` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'diemdtechnologiesilyaan'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -148,4 +153,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-04  9:41:27
+-- Dump completed on 2024-06-10 22:50:56
