@@ -11,6 +11,11 @@ namespace WebsiteDiemd_Presentation
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+        if ((Session["rol"] == null))
+            {
+                Response.Redirect("aanmelden.aspx");
+            }
+
             if ((Session["rol"].ToString() == "klant") || (Session["rol"].ToString() == "werknemer"))
             {
                 naamLabel.Text = Session["username"].ToString();
