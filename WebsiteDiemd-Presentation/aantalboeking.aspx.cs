@@ -20,7 +20,7 @@ namespace WebsiteDiemd_Presentation
         if ((Session["rol"].ToString() == "klant") || (Session["rol"].ToString() == "werknemer"))
             {
                 
-                aantalLabel.Text = Convert.ToString(_bc.GetAantalBoekingen());
+                aantalLabel.Text = "We hebben "+Convert.ToString(_bc.GetAantalBoekingen())+ " boekingenen";
                 
                 
             }
