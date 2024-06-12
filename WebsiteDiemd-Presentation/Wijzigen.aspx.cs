@@ -17,10 +17,8 @@ namespace WebsiteDiemd_Presentation
             GridView1.DataSource = _bc.GetBoekingen();
             GridView1.DataBind();
             aanmeldList.DataSource = _bc.GetPersonen();
-            aanmeldList.ToString();
             aanmeldList.DataBind();
             dienstList.DataSource = _bc.GetDiensten();
-            dienstList.ToString();
             dienstList.DataBind();
             waarText.Value = "";
             probleemText.Value = "";
@@ -32,7 +30,6 @@ namespace WebsiteDiemd_Presentation
                 Response.Redirect("aanmelden.aspx");
             }
 
-
             if ((Session["rol"].ToString() == "werknemer"))
             {
             }
@@ -40,8 +37,11 @@ namespace WebsiteDiemd_Presentation
             {
                 Response.Redirect("aanmelden.aspx");
             }
-            
-            ResetForm();
+
+            if (!IsPostBack)
+            {
+                ResetForm();
+            }
         }
 
         protected void GridView1_OnSelectedIndexChanged(object sender, EventArgs e)

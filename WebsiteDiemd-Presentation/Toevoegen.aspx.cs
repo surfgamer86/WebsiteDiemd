@@ -18,7 +18,6 @@ namespace WebsiteDiemd_Presentation
                 Response.Redirect("aanmelden.aspx");
             }
 
-
             if ((Session["rol"].ToString() == "werknemer"))
             {
             }
@@ -26,18 +25,19 @@ namespace WebsiteDiemd_Presentation
             {
                 Response.Redirect("aanmelden.aspx");
             }
-            ResetForm();
 
+            if (!IsPostBack)
+            {
+                ResetForm();
+            }
         }
         protected void ResetForm()
         {
             GridView1.DataSource = _bc.GetBoekingen();
             GridView1.DataBind();
             aanmeldList.DataSource = _bc.GetPersonen();
-            aanmeldList.ToString();
             aanmeldList.DataBind();
             dienstList.DataSource = _bc.GetDiensten();
-            dienstList.ToString();
             dienstList.DataBind();
             waarText.Value = "";
             probleemText.Value = "";
@@ -45,6 +45,8 @@ namespace WebsiteDiemd_Presentation
 
         protected void toevoegenButton_Click(object sender, EventArgs e)
         {
+            
+           
             _bc.AddBoeking(Convert.ToInt16(aanmeldList.SelectedIndex)-1,Convert.ToInt16(dienstList.SelectedIndex)-1,Convert.ToDateTime(calender.SelectedDate),waarText.Value,probleemText.Value);
             ResetForm();
 

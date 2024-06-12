@@ -48,5 +48,10 @@ namespace WebsiteDiemd_Presentation
                 
             }
         }
+
+        protected void signupBtn_OnClick(object sender, EventArgs e)
+        {
+            Response.Redirect("SignUp.aspx");
+        }
     }
 }
