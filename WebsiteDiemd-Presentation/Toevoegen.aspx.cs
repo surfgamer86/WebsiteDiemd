@@ -47,7 +47,7 @@ namespace WebsiteDiemd_Presentation
         {
             
            
-            _bc.AddBoeking(Convert.ToInt16(aanmeldList.SelectedIndex)-1,Convert.ToInt16(dienstList.SelectedIndex)-1,Convert.ToDateTime(calender.SelectedDate),waarText.Value,probleemText.Value);
+            _bc.AddBoeking(Convert.ToInt16(aanmeldList.SelectedIndex)-1,Convert.ToInt16(dienstList.SelectedIndex)-1,Convert.ToDateTime(calender.SelectedDate) ,waarText.Value ,probleemText.Value);
             ResetForm();
 
         }

@@ -54,8 +54,9 @@ namespace WebsiteDiemd_Library.business
             _persistCode.DeleteBoeking(id);
         }
 
-        public void AlterBoeking(int id, boeking boeking)
+        public void AlterBoeking(int id, int AanmeldenID, int DienstID, DateTime Wanneer, String Waar, string probleem)
         {
+            boeking boeking = new boeking(AanmeldenID, DienstID , Wanneer, probleem, Waar );
             _persistCode.AlterBoeking(id, boeking);
         }
 
