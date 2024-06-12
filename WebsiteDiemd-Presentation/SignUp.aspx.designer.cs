@@ -24,6 +24,15 @@ namespace WebsiteDiemd_Presentation
         protected global::System.Web.UI.WebControls.TextBox txtNaam;
 
         /// <summary>
+        /// rfvNaam control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNaam;
+
+        /// <summary>
         /// txtVoornaam control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace WebsiteDiemd_Presentation
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtVoornaam;
+
+        /// <summary>
+        /// rfvVoornaam control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvVoornaam;
 
         /// <summary>
         /// ddlGeslacht control.
@@ -42,6 +60,15 @@ namespace WebsiteDiemd_Presentation
         protected global::System.Web.UI.WebControls.DropDownList ddlGeslacht;
 
         /// <summary>
+        /// rfvGeslacht control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvGeslacht;
+
+        /// <summary>
         /// gebdatumCalender control.
         /// </summary>
         /// <remarks>
@@ -49,6 +76,15 @@ namespace WebsiteDiemd_Presentation
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl gebdatumCalender;
+
+        /// <summary>
+        /// rfvGebdatum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvGebdatum;
 
         /// <summary>
         /// txtUsername control.
@@ -60,6 +96,15 @@ namespace WebsiteDiemd_Presentation
         protected global::System.Web.UI.WebControls.TextBox txtUsername;
 
         /// <summary>
+        /// rfvUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUsername;
+
+        /// <summary>
         /// txtPassword control.
         /// </summary>
         /// <remarks>
@@ -67,6 +112,15 @@ namespace WebsiteDiemd_Presentation
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
+
+        /// <summary>
+        /// rfvPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPassword;
 
         /// <summary>
         /// txtStraat control.
@@ -78,6 +132,15 @@ namespace WebsiteDiemd_Presentation
         protected global::System.Web.UI.WebControls.TextBox txtStraat;
 
         /// <summary>
+        /// rfvStraat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvStraat;
+
+        /// <summary>
         /// txtHousenumber control.
         /// </summary>
         /// <remarks>
@@ -85,6 +148,15 @@ namespace WebsiteDiemd_Presentation
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHousenumber;
+
+        /// <summary>
+        /// rfvHousenumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHousenumber;
 
         /// <summary>
         /// txtPostcode control.
@@ -96,6 +168,15 @@ namespace WebsiteDiemd_Presentation
         protected global::System.Web.UI.WebControls.TextBox txtPostcode;
 
         /// <summary>
+        /// rfvPostcode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPostcode;
+
+        /// <summary>
         /// txtCity control.
         /// </summary>
         /// <remarks>
@@ -103,6 +184,15 @@ namespace WebsiteDiemd_Presentation
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCity;
+
+        /// <summary>
+        /// rfvCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCity;
 
         /// <summary>
         /// txtEmail control.
@@ -114,6 +204,24 @@ namespace WebsiteDiemd_Presentation
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
+        /// rfvEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
+
+        /// <summary>
+        /// revEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revEmail;
+
+        /// <summary>
         /// txtPhonenumber control.
         /// </summary>
         /// <remarks>
@@ -121,6 +229,15 @@ namespace WebsiteDiemd_Presentation
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPhonenumber;
+
+        /// <summary>
+        /// rfvPhonenumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPhonenumber;
 
         /// <summary>
         /// btnSubmit control.
