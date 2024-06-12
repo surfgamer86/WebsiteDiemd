@@ -26,9 +26,12 @@ namespace WebsiteDiemd_Presentation
             {
                 Response.Redirect("aanmelden.aspx");
             }
-            ResetForm();
-            
-           
+            if (!IsPostBack)
+            {
+                ResetForm();
+            }
+
+
         }
         protected void ResetForm()
         {

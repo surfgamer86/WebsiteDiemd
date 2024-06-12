@@ -37,7 +37,7 @@
         <div class="row">
             <div class="col-md-12">
                 <asp:Button ID="toevoegenButton" runat="server" Text="Toevoegen" OnClick="toevoegenButton_Click" CssClass="btn btn-primary" />
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                
             </div>
         </div>
     </div>

@@ -56,7 +56,7 @@ namespace WebsiteDiemd_Presentation
         }
         protected void wijzigButton_Click(object sender, EventArgs e)
         {
-            _bc.AlterBoeking(Convert.ToInt16(boekingtext.Value), new boeking( Convert.ToInt16(aanmeldList.SelectedValue), Convert.ToInt16(dienstList.SelectedValue), calender.SelectedDate, waarText.Value, probleemText.Value));
+            _bc.AlterBoeking(Convert.ToInt32(GridView1.SelectedRow.Cells[1].Text), new boeking( Convert.ToInt16(aanmeldList.SelectedValue), Convert.ToInt16(dienstList.SelectedValue),Convert.ToDateTime( calender.SelectedDate), waarText.Value, probleemText.Value));
             ResetForm();
         }
     }
