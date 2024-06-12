@@ -24,7 +24,7 @@ namespace WebsiteDiemd_Library.business
 
         public void AddBoeking(int AanmeldenID, int DienstID, DateTime Wanneer, string Waar, string probleem)
         {
-            boeking boeking = new boeking(DienstID, AanmeldenID, Wanneer, probleem, Waar);
+            boeking boeking = new boeking( AanmeldenID, DienstID, Wanneer, probleem, Waar);
             _persistCode.AddBoeking(boeking);
         }
 
@@ -54,9 +54,9 @@ namespace WebsiteDiemd_Library.business
             _persistCode.DeleteBoeking(id);
         }
 
-        public void AlterBoeking(int id, int AanmeldenID, int DienstID, DateTime Wanneer, String Waar, string probleem)
+        public void AlterBoeking(int id, int AanmeldenID, int DienstID, DateTime Wanneer,  string probleem,String Waar)
         {
-            boeking boeking = new boeking(AanmeldenID, DienstID , Wanneer, probleem, Waar );
+            boeking boeking = new boeking(AanmeldenID, DienstID , Wanneer,  probleem, Waar);
             _persistCode.AlterBoeking(id, boeking);
         }
 
